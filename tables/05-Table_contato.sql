@@ -13,7 +13,7 @@ create table contato (
 	celular varchar (18),
     email varchar (100),
     profissao varchar (50),
-    salario varchar (8),
+    salario decimal (6,2),
 	endereco_id bigint not null,
 	constraint fk_endereco_id foreign key (endereco_id) references endereco(id)
 ) engine=InnoDB;
